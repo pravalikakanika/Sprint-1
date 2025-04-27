@@ -79,7 +79,6 @@ Authorization is integrated with external Identity Providers to ensure policy co
 |------------------------------------------|----------------------------------------------------------------|
 | Easy to understand and manage            | Inflexible for dynamic or context-based access                 |
 | Clear mapping between roles and access   | Can lead to role explosion in complex systems                  |
-| Fits most traditional team structures    |                                                               |
 
 ---
 
