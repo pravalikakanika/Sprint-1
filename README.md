@@ -13,7 +13,7 @@
 # Table of Contents
 
 - [Introduction](#introduction)
-- [What is Git Flow?](#what-is-git-flow)
+- [What is Git Flow?](#what-is-git-flow) 
 - [Why Git Flow?](#why-git-flow)
 - [Workflow Diagram](#workflow-diagram)
 - [Advantages of Git Flow](#advantages-of-git-flow)
