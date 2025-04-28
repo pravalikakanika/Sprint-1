@@ -92,8 +92,7 @@ The **Remote Repository** is where your project is stored online or on a network
 | **Clear structure**: Each branch has a specific role, reducing confusion. | **Complexity**: More branches mean more overhead, especially for small teams. |
 | **Parallel development**: Teams can work on features independently. | **Not ideal for CI/CD**: Slower to adapt to continuous delivery or deployment models. |
 | **Stable releases**: Main branch always reflects the production state. | **Heavyweight for simple apps**: Smaller projects may find it unnecessarily complicated. |
-| **Easy maintenance**: Hotfixes are isolated and quick to deploy. | **Tooling dependence**: Some flows need tools like the git-flow CLI extensions. |
-| **Scalable**: Works well with large teams and long-term projects. |                                                            |
+| **Easy maintenance**: Hotfixes are isolated and quick to deploy. | **Tooling dependence**: Some flows need tools like the git-flow CLI extensions. |                                                          |
 
 # Conclusion
 
