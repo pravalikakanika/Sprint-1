@@ -13,7 +13,7 @@
 # Table of Contents
 
 - [Introduction](#introduction)
-- [What is Git Flow](#what-is-git-flow)
+- [What is Git Flow?](#what-is-git-flow)
 - [Why Git Flow?](#why-git-flow)
 - [Workflow Diagram](#workflow-diagram)
 - [Advantages of Git Flow](#advantages-of-git-flow)
@@ -30,11 +30,10 @@
 
 # Introduction
 
-This document outlines the purpose, workflow, advantages, and limitations of Git Flow, helping teams adopt a structured Git branching strategy.
+This document provides a comprehensive overview of Git Flow, a branching strategy designed to streamline collaborative development and ensure stable, structured releases. It covers everything from the fundamentals of Git Flow and its workflow, to its advantages, disadvantages, and practical use cases.
 
 
-
-# What is Git Flow
+# What is Git Flow?
 
 Git Flow is a branching model for Git, created by Vincent Driessen, that defines a strict branching strategy designed around the project release cycle. It provides a robust framework for managing larger software projects and collaborative development, bringing clarity and consistency to your workflow.
 Git Flow supplements the existing Git commands with extensions that simplify working with feature branches, release branches, hotfixes, and more.
