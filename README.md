@@ -12,8 +12,8 @@
 # Table of Contents
 
 1. [Introduction](#introduction)
-2. [What is Authorization](#what-is-authorization)
-3. [Why Authorization Matters](#why-authorization-matters)
+2. [What is Authorization?](#what-is-authorization)
+3. [Why Authorization Matters?](#why-authorization-matters)
 4. [Access Levels](#access-levels)
 5. [Audit Trails](#audit-trails)
 6. [Integration with Identity Providers (IdPs)](#integration-with-identity-providers-idps)
@@ -30,11 +30,11 @@ This document outlines Authorization (Authz) in Version Control Systems (VCS), f
 
 
 
-# What is Authorization
+# What is Authorization?
 
 Authorization (Authz) in a Version Control System (VCS) determines what actions a user can perform after their identity has been authenticated. It defines who can read, write, modify, or administer repositories, helping enforce security policies, safeguard intellectual property, and comply with organizational standards.
 
-# Why Authorization Matters
+# Why Authorization Matters?
 
 Authorization is a key layer of defense in any VCS, enabling:
 
@@ -68,7 +68,7 @@ Custom roles can be created as needed for special project/team structures.
 
 Auditability is essential for secure authorization. All authorization-related activities must be logged for traceability and compliance.
 
-## What to Track
+## What to Track?
 
 - Role assignments and changes  
 - Access granted or revoked  
