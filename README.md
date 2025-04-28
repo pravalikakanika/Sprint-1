@@ -27,6 +27,7 @@
 
 
 
+
 # Introduction
 
 This document outlines the purpose, workflow, advantages, and limitations of Git Flow, helping teams adopt a structured Git branching strategy.
@@ -41,6 +42,8 @@ Git Flow supplements the existing Git commands with extensions that simplify wor
 
 # Why Git Flow?
 
+
+
 In growing teams and complex projects, handling releases, bug fixes, and new features can get chaotic. Git Flow offers a clear branching model that supports:
 
 - **Parallel development** via feature branches.
@@ -52,26 +55,35 @@ This model works especially well for projects with scheduled release cycles and 
 
 # Workflow Diagram
 
-![git-flow-4](https://github.com/user-attachments/assets/4af1dbf7-ea62-482b-815d-97b9d28039a2)
+![image](https://github.com/user-attachments/assets/ff248010-47dd-4714-acc6-3b2dee97b968)
 
-## Main Branch
+## Working Directory
+The **Working Directory** is where you actively work on your project files. These files may or may not be tracked by Git. Any untracked files are considered "local" and are not under Git's control until you explicitly tell Git to track them. Changes made in the working directory are not saved to Git until you commit them.
 
-In Git flow, the main branch is created at the start of a project and is maintained throughout the development process. The branch can be tagged at various commits in order to signify different versions or releases of the code, and other branches will be merged into the main branch after they have been sufficiently vetted and tested.
+- **Untracked files**: Files that Git isn't aware of yet.
+- **Tracked files**: Files that Git is tracking for changes.
 
-## Develop Branch
-The develop branch is created at the start of a project and is maintained throughout the development process, and contains pre-production code with newly developed features that are in the process of being tested.
+If you make changes to files in the working directory without saving them to Git, you will lose those changes as Git is not monitoring them.
 
-## Feature Branch
+## Staging Area
+The **Staging Area** (also known as the **Index**) is where you prepare changes before committing them to the local repository. When you run `git add`, you move files from the Working Directory to the Staging Area. 
 
-The feature branch is the most common type of branch in the Git flow workflow. It is used when adding new features to your code.When working on a new feature, you will start a feature branch off the develop branch, and then merge your changes back into the develop branch when the feature is completed and properly reviewed.
+- Changes are saved in the `.git` directory.
+- Git only tracks the changes that are added to the Staging Area. If you modify a file in the Staging Area, Git will not track the changes until you explicitly stage it again using `git add`.
 
-## Release Branch
+## Local Repository
+The **Local Repository** is the storage area where your project's commits are saved. When you use `git commit`, the changes in the Staging Area are saved into the Local Repository (the `.git` directory). After a commit, the Staging Area is cleared, and the changes are now part of the project’s history.
 
-The release branch should be used when preparing new production releases. Typically, the work being performed on release branches concerns finishing touches and minor bugs specific to releasing new code, with code that should be addressed separately from the main develop branch.
+- **View commit history**: You can use `git log` to see the commits stored in the Local Repository.
+- Changes in the Local Repository are local to your environment. To share them with others, you'll need to push the changes to a remote repository.
 
-## Hotfix Branch
+## Remote Repository
+The **Remote Repository** is where your project is stored online or on a network server. It allows multiple developers to collaborate by pushing and pulling changes to and from a central location. Common services for remote repositories include GitHub, GitLab, and Bitbucket.
 
-In Git flow, the hotfix branch is used to quickly address necessary changes in your main branch.The base of the hotfix branch should be your main branch and should be merged back into both the main and develop branches. Merging the changes from your hotfix branch back into the develop branch is critical to ensure the fix persists the next time the main branch is released.
+- **Push**: To upload your local commits to the remote repository, you use the command `git push`. This allows others to see and use your changes.
+- **Pull**: To fetch and merge changes from the remote repository to your local repository, you use the command `git pull`. This keeps your local repository up-to-date with the latest changes from other contributors.
+- **Clone**: You can create a local copy of a remote repository by using `git clone`, which allows you to start working on a project that is stored remotely.
+
 
 # Advantages of Git Flow
 
