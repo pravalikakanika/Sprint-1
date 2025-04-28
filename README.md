@@ -85,20 +85,15 @@ The **Remote Repository** is where your project is stored online or on a network
 - **Clone**: You can create a local copy of a remote repository by using `git clone`, which allows you to start working on a project that is stored remotely.
 
 
-# Advantages of Git Flow
+# Advantages and Disadvantages
 
-- **Clear structure**: Each branch has a specific role, reducing confusion.
-- **Parallel development**: Teams can work on features independently.
-- **Stable releases**: Main branch always reflects the production state.
-- **Easy maintenance**: Hotfixes are isolated and quick to deploy.
-- **Scalable**: Works well with large teams and long-term projects.
-
-# Disadvantages of Git Flow
-
-- **Complexity**: More branches mean more overhead, especially for small teams.
-- **Not ideal for CI/CD**: Slower to adapt to continuous delivery or deployment models.
-- **Heavyweight for simple apps**: Smaller projects may find it unnecessarily complicated.
-- **Tooling dependence**: Some flows need tools like the git-flow CLI extensions.
+| Advantages                                | Disadvantages                                              |
+|-------------------------------------------|------------------------------------------------------------|
+| **Clear structure**: Each branch has a specific role, reducing confusion. | **Complexity**: More branches mean more overhead, especially for small teams. |
+| **Parallel development**: Teams can work on features independently. | **Not ideal for CI/CD**: Slower to adapt to continuous delivery or deployment models. |
+| **Stable releases**: Main branch always reflects the production state. | **Heavyweight for simple apps**: Smaller projects may find it unnecessarily complicated. |
+| **Easy maintenance**: Hotfixes are isolated and quick to deploy. | **Tooling dependence**: Some flows need tools like the git-flow CLI extensions. |
+| **Scalable**: Works well with large teams and long-term projects. |                                                            |
 
 # Conclusion
 
