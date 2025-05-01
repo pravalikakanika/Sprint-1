@@ -1,3 +1,4 @@
+# Proof of Concept: VCS Branching Strategy Using Git Flow
 
 ![image](https://github.com/user-attachments/assets/d47c41b9-e240-4233-ba02-a391999d6568)
 
@@ -13,7 +14,7 @@
 # Table of Contents
 
 - [Introduction](#introduction)
-- [What is Git Flow?](#what-is-git-flow) 
+- [What is Git Flow](#what-is-git-flow)
 - [Why Git Flow?](#why-git-flow)
 - [Workflow Diagram](#workflow-diagram)
 - [Advantages of Git Flow](#advantages-of-git-flow)
@@ -30,10 +31,11 @@
 
 # Introduction
 
-This document provides a comprehensive overview of Git Flow, a branching strategy designed to streamline collaborative development and ensure stable, structured releases. It covers everything from the fundamentals of Git Flow and its workflow, to its advantages, disadvantages, and practical use cases.
+This document outlines the purpose and structure of the Git Flow branching strategy to help teams manage code effectively.
+It details the workflow, including the roles of feature, develop, release, and hotfix branches, promoting organized and parallel development. The advantages and limitations of Git Flow are also discussed to guide teams in deciding when and how to adopt it.
 
 
-# What is Git Flow?
+# What is Git Flow ?
 
 Git Flow is a branching model for Git, created by Vincent Driessen, that defines a strict branching strategy designed around the project release cycle. It provides a robust framework for managing larger software projects and collaborative development, bringing clarity and consistency to your workflow.
 Git Flow supplements the existing Git commands with extensions that simplify working with feature branches, release branches, hotfixes, and more.
@@ -84,14 +86,15 @@ The **Remote Repository** is where your project is stored online or on a network
 - **Clone**: You can create a local copy of a remote repository by using `git clone`, which allows you to start working on a project that is stored remotely.
 
 
-# Advantages and Disadvantages
+##  Advantages and  Disadvantages of Git Flow
 
-| Advantages                                | Disadvantages                                              |
-|-------------------------------------------|------------------------------------------------------------|
-| **Clear structure**: Each branch has a specific role, reducing confusion. | **Complexity**: More branches mean more overhead, especially for small teams. |
-| **Parallel development**: Teams can work on features independently. | **Not ideal for CI/CD**: Slower to adapt to continuous delivery or deployment models. |
-| **Stable releases**: Main branch always reflects the production state. | **Heavyweight for simple apps**: Smaller projects may find it unnecessarily complicated. |
-| **Easy maintenance**: Hotfixes are isolated and quick to deploy. | **Tooling dependence**: Some flows need tools like the git-flow CLI extensions. |                                                           |
+| Advantages                         | Disadvantages                          |
+|------------------------------------|----------------------------------------|
+| **Clear Structure**: Each branch has a specific role, reducing confusion. | **Complexity**: More branches mean more overhead, especially for small teams. |
+| **Parallel Development**: Teams can work on features independently. | **Not Ideal for CI/CD**: Slower to adapt to continuous delivery or deployment models. |
+| **Stable Releases**: `main` branch always reflects the production state. | **Heavyweight for Simple Apps**: Smaller projects may find it unnecessarily complicated. |
+| **Easy Maintenance**: Hotfixes are isolated and quick to deploy. | **Tooling Dependence**: Some flows need tools like the `git-flow` CLI extensions. |
+| **Scalable**: Works well with large teams and long-term projects. |  |
 
 # Conclusion
 
@@ -108,9 +111,7 @@ Git Flow is a powerful branching strategy for teams that need a structured appro
 
 | Link | Description |
 |------|-------------|
-| [https://www.gitkraken.com/learn/git/git-flow](https://www.gitkraken.com/learn/git/git-flow) | Documentation followed from this guide |
-
-
+| [Gitflow](https://medium.com/club-infosphere/a-walk-through-to-github-908485f8ecda) | Documentation followed from this guide |
 
 
 
