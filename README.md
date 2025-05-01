@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/6f4ef75b-ac13-48e8-a358-7f5686e2a264)
+# VCS Authorization Document
+
+![image](https://github.com/user-attachments/assets/6223a615-1d26-433b-9ce5-91c7dc247a87)
 
 
 | Author        | Date       | Version | Review Level   | Reviewer Name        |
@@ -12,8 +14,8 @@
 # Table of Contents
 
 1. [Introduction](#introduction)
-2. [What is Authorization?](#what-is-authorization)
-3. [Why Authorization Matters?](#why-authorization-matters)
+2. [What is Authorization](#what-is-authorization)
+3. [Why Authorization Matters](#why-authorization-matters)
 4. [Access Levels](#access-levels)
 5. [Audit Trails](#audit-trails)
 6. [Integration with Identity Providers (IdPs)](#integration-with-identity-providers-idps)
@@ -30,11 +32,11 @@ This document outlines Authorization (Authz) in Version Control Systems (VCS), f
 
 
 
-# What is Authorization?
+# What is Authorization
 
 Authorization (Authz) in a Version Control System (VCS) determines what actions a user can perform after their identity has been authenticated. It defines who can read, write, modify, or administer repositories, helping enforce security policies, safeguard intellectual property, and comply with organizational standards.
 
-# Why Authorization Matters?
+# Why Authorization Matters
 
 Authorization is a key layer of defense in any VCS, enabling:
 
@@ -68,7 +70,7 @@ Custom roles can be created as needed for special project/team structures.
 
 Auditability is essential for secure authorization. All authorization-related activities must be logged for traceability and compliance.
 
-## What to Track?
+## What to Track
 
 - Role assignments and changes  
 - Access granted or revoked  
@@ -112,6 +114,8 @@ Authorization is integrated with external Identity Providers to ensure policy co
 |------------------------------------------|----------------------------------------------------------------|
 | Easy to understand and manage            | Inflexible for dynamic or context-based access                 |
 | Clear mapping between roles and access   | Can lead to role explosion in complex systems                  |
+|Works well in organizations with predictable job functions | Requires workarounds or manual overrides for edge cases|
+| Assigning permissions to roles instead of users reduces redundancy|  Lacks the ability to control access at a very detailed level |
 
 ---
 
@@ -120,7 +124,11 @@ Authorization is integrated with external Identity Providers to ensure policy co
 | **Advantages**                                     | **Disadvantages**                                                  |
 |----------------------------------------------------|--------------------------------------------------------------------|
 | Highly flexible and dynamic (user, resource, time) | More complex to set up and manage                                  |
-| Enables fine-grained control                       | Requires clearly defined and maintained attribute policies         |
+| Enables fine-grained control                       | Real-time attribute evaluation can slow down decisions.        |
+|Adapts in real-time to changing contexts (e.g., time of access, user location etc.)|  Rules can become difficult to track and test|
+|Eliminates the need for creating numerous roles by using attribute logic |  Inaccurate attributes can lead to incorrect access decisions |
+
+
 
 ---
 
@@ -130,7 +138,8 @@ Authorization is integrated with external Identity Providers to ensure policy co
 |-----------------------------------------------------|--------------------------------------------------------------|
 | Policy-driven and adaptable to regulations          | Higher implementation complexity                             |
 | Well-suited for complex, enterprise-scale systems   | Requires a policy engine and authoring tools                 |
-
+| Adjusts to real-time changes in risk or context     | Tracing why a request was allowed or denied can be complex |
+| Fine-grained, auditable control structures | Requires understanding of policy languages and frameworks |
 
 # Best Practices
 
@@ -143,7 +152,7 @@ Authorization is integrated with external Identity Providers to ensure policy co
 
 # Conclusion
 
-Based on the scale and scope of this VCS Design POC, Role-Based Access Control (RBAC) is the most suitable authorization model. It offers the right balance of simplicity and security, with the flexibility to evolve toward ABAC or PBAC if future needs demand.
+Based on the scale and scope of this VCS Design POC, We are using Role-Based Access Control (RBAC) which is the most suitable authorization model for our project. It offers the right balance of simplicity and security, with the flexibility to evolve toward ABAC or PBAC if future needs demand.
 
 
 
@@ -161,5 +170,4 @@ Based on the scale and scope of this VCS Design POC, Role-Based Access Control (
 |  Link |  Description |
 |--------|----------------|
 | [Authorization](https://frontegg.com/guides/authorization-a-complete-guide#User_Authorization_Strategies_and_Techniques) | The link followed for this documentation |
-
 
