@@ -49,12 +49,15 @@ GitLab can be applied in various scenarios, including:
 - **DevOps Automation:** GitLab automates repetitive tasks, such as code deployment and testing, enabling faster and more reliable software delivery.
 
 # Key Features
-- **Integrated CI/CD:** GitLab includes built-in pipelines for CI/CD, eliminating the need for external tools.
-- **Version Control (Git-based):** GitLab uses Git as its version control system for managing code repositories.
-- **Auto DevOps:** GitLab offers Auto DevOps to automatically set up CI/CD pipelines based on best practices.
-- **Issue Tracking:** GitLab offers a comprehensive issue tracking system to manage bugs, feature requests, and tasks.
-- **Security and Compliance:** GitLab integrates security tools like SAST (Static Application Security Testing), DAST (Dynamic Application Security Testing), and dependency scanning.
-- **Container Registry & Kubernetes Integration:** GitLab supports containerized applications with its built-in container registry and native Kubernetes integration for deployment.
+
+| **Feature**               | **Description**                                                                 |
+|---------------------------|---------------------------------------------------------------------------------|
+| **Integrated CI/CD**      | Built-in pipelines for CI/CD, removing the need for external tools.            |
+| **Version Control**       | Uses Git for managing code repositories.                                       |
+| **Auto DevOps**           | Automatically configures CI/CD pipelines using best practices.                 |
+| **Issue Tracking**        | Built-in system to track bugs, feature requests, and project tasks.            |
+| **Security and Compliance** | Includes SAST, DAST, and dependency scanning for security and compliance checks. |
+
 
 # Getting Started
 
