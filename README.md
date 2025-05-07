@@ -1,12 +1,12 @@
 
-![image](https://github.com/user-attachments/assets/649fcf39-c210-4b88-a16f-480215587f92)
+![Gitlab-Logo](https://github.com/user-attachments/assets/3208af3f-7e1d-4036-937e-5d8ed8a89c96)
 
 # GitLab Evaluation Documentation
 
 
 | Author        | Date       | Version | Review Level   | Reviewer Name        |
 |---------------|------------|---------|----------------|----------------------|
-| pravalika Kanikarapu  |    | v1.0    | Pre-Reviewer   | Priyanshu            |
+| pravalika Kanikarapu  |may 05    | v1.0    | Pre-Reviewer   | Priyanshu            |
 | pravalika Kanikarapu  |    |     | L0             | priyanka      |
 | pravalika Kanikarapu  |            |         | L1             | Rishabh Sharma       |
 | pravalika Kanikarapu  |            |         | L2             | piyush Upadhyay      |
@@ -31,6 +31,7 @@
 - [Disaster Recovery](#disaster-recovery)
 - [High Availability](#high-availability)
 - [Troubleshooting](#troubleshooting)
+- [Gitlab Best Practices](#gitlab-best-practices)
 - [FAQs](#faqs)
 - [Contact Information](#contact-information)
 - [References](#references)
@@ -182,6 +183,24 @@ GitLab can be set up in a high-availability configuration by configuring multipl
 | CI/CD pipeline not running    | Runner not registered or misconfigured                             | Register a runner using `gitlab-runner register`; check runner status in GitLab UI.         |
 | Email not sent                | SMTP settings not configured correctly                             | Verify SMTP settings in `gitlab.rb`; reconfigure and restart GitLab.                        |
 | Slow performance              | Insufficient system resources or high load                         | Monitor with `top` or `htop`; upgrade instance specs or tune GitLab settings.               |
+
+# GitLab Best Practices
+
+## 1. Secure Access :
+- Use **SSH keys**, enable **two-factor authentication (2FA)**, and set **protected branches** to control access.
+
+## 2. Branching Strategy :
+- Follow a clear branching strategy like **GitFlow** and enforce **code reviews** before merging changes.
+
+## 3. Automate CI/CD Pipelines :
+- Keep `.gitlab-ci.yml` files **clean and modular**, using caching to optimize pipeline performance.
+
+## 4. Project Organization :
+- **Organize projects** with **groups**, **labels**, and ensure **clear documentation** for setup and usage.
+
+## 5. Monitor Security and Integrate Tools :
+- Enable **SAST**, **DAST**, and integrate with tools like **Jira** and **Slack** for better collaboration and security monitoring.
+
 
 # FAQs
 
